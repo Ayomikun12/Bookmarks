@@ -1,0 +1,783 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Menu p {
+    margin-left: 7rem;
+    margin-top: 2rem;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.navMenu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 7rem;
+    margin-top: 1.6rem;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.navMenu ul a:hover {
+    color: blue;
+    transition: 1s ease-in-out;
+}
+
+.navMenu ul .log a{
+    color: white;
+    background-color: blue;
+    border-radius: 6px;
+    padding: .5rem 1.8rem;
+}
+
+.navMenu ul .log a:hover {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+    transition: .2s ease-in-out;
+}
+
+.navMenu ul li {
+    margin: 10px;
+}
+
+.navMenu ul li a {
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    margin-top: 6rem;
+}
+
+.hero-text {
+    margin-top: 4rem;
+    margin-left: 6rem;
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    width: 80%;
+}
+
+.hero-text p {
+    margin-top: 2rem;
+    font-size: 17px;
+    width: 80%;
+    line-height: 1.5;
+    opacity: .8;
+}
+
+.get {
+    display: flex;
+}
+
+.chrome {
+    margin-top: 2rem;
+}
+
+.chrome a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    background-color: hsl(231, 69%, 60%);;
+    padding: .6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 7px;
+    font-size: 1.3rem;
+}
+
+.chrome a:hover {
+    border: 3px solid blue;
+    color: blue;
+    background-color: #fff;
+    transition: 0.7s ease-in;
+}
+
+.fire {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.fire a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+    padding: .6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fire a:hover {
+    background-color: #fff;
+    border: 2px solid black;
+}
+
+.org {
+    animation: slideInFromRight 1s ease-in;
+}
+
+.org-img {
+    position: relative;
+}
+
+
+.org-img::before {
+    content: "";
+    background-color: hsl(231, 69%, 60%);
+    height: 70%;
+    width: 73%;
+    right: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+.features {
+    margin-top: 5rem;
+    animation: slideInFromTop 1s ease-in;
+}
+
+.aim {
+    text-align: center;
+}
+
+.aim h1 {
+    font-weight: 800;
+}
+
+.aim p {
+    width: 38%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-size: 17px;
+    line-height: 1.4;
+    opacity: .8;
+}
+
+.speed {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.sh h3 {
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.sh h3:hover {
+    color: red;
+    text-decoration: underline 2px solid red;
+}
+
+.ing h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 2rem;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.ing h3:hover {
+    color: red;
+    text-decoration: underline 2px solid red;
+}
+
+.sped h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 2rem;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.sped h3:hover {
+    color: red;
+    text-decoration: underline 2px solid red;
+}
+
+.sh::after {
+    content: "";
+    background-color: red;
+    display: block;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+}
+
+.bookmark {
+    display: flex;
+    margin-top: 5rem;
+}
+
+.book-img {
+    opacity: 0;
+    animation: animateContent 2s ease forwards;
+}
+
+.book-img img {
+    margin-left: 10rem;
+    /* width: 100%; */
+}
+
+.book-img::before{
+    content: "";
+    background-color:  hsl(231, 69%, 60%);
+    width: 37%;
+    height: 65%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    border-top-left-radius: 60%;
+    border-bottom-right-radius: 40%;
+    margin-left: 5rem;
+}
+
+.book {
+    margin-top: 3rem;
+    margin-left: 5rem;
+    opacity: 0;
+    animation: animateContent 2s ease forwards;
+}
+
+.book h1 {
+    font-weight: 800;
+}
+
+.book p {
+    width: 70%;
+    font-size: 18px;
+    opacity: .7;
+    margin-top: 5px;
+}
+
+.more {
+    margin-top: 2.5rem;
+}
+
+.more a {
+    background-color: blue;
+    color: #fff;
+    padding: .7rem 1.4rem;
+    text-decoration: none;
+    font-size: 19px;
+    border-radius: 6px;
+}
+
+.down {
+    margin-top: 4rem;
+}
+
+.down h1 {
+    text-align: center;
+}
+
+.down p {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 13px;
+    font-size: 18px;
+    opacity: .7;
+    line-height: 1.5;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.mini {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    margin-left: 2rem;
+    border-radius: 6px;
+    width: 20%;
+}
+
+.logo {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 100%;
+    margin: 0;
+}
+
+.ver h2 {
+    text-align: center;
+    margin-top: .7rem;
+}
+
+.ver p {
+    text-align: center;
+    margin-top: .6rem;
+    opacity: .7;
+}
+
+.inst {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.inst a {
+    text-decoration: none;
+    background-color: hsl(231, 69%, 60%);
+    color: #fff;
+    padding: 1rem;
+    font-size: 17px;
+    border-radius: 6px;
+}
+
+.inst a:hover {
+    background-color: #fff;
+    color: blue;
+    border: 2px solid blue;
+    transition: .8s ease-in-out;
+}
+
+.que {
+    margin-top: 3rem;
+}
+
+.freq h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.freq p {
+    width: 35%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    opacity: .7;
+}
+
+.booking {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.booking h3 {
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+}
+
+.info {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.info a {
+    text-decoration: none;
+    background-color: hsl(231, 69%, 60%);
+    padding: .8rem 2rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.what {
+    background-color: hsl(231, 69%, 60%);
+    margin-top: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.join {
+    color: #fff;
+    text-align: center;
+}
+
+.join p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: .5em;
+}
+
+.join h2 {
+    font-weight: 500;
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-size: 27px;
+}
+
+.type {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.email input {
+    padding: 1rem;
+    padding-right: 3rem;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #fff;
+}
+
+.us {
+    background-color: rgb(218, 69, 69);
+    padding: .8rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    margin-left: 1rem;
+    border-radius: 6px;
+}
+
+.us a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.twitt {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(4, 4, 36);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.price {
+    display: flex;
+    margin-left: 20rem;
+}
+
+.price .clas a {
+    color: #fff;
+    margin-left: 3rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.price .clas a:hover {
+    color: red;
+    transition: .6s ease-in-out;
+}
+
+.icon {
+    display: flex;
+    margin-right: 10rem;
+}
+
+.icon .fb {
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBotom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animateContent {
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+@media(max-width:800px){
+    .Menu p {
+        margin: 0;
+        margin: 1rem;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .hero {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: grid;
+        margin-top: 1.7rem;
+        margin-right: 2rem;
+    }
+
+    .hero-text {
+        order: 2;
+        gap: unset;
+    }
+
+    .org-img img {
+        width: 100%;
+    }
+
+    .hero-text {
+        margin: 0;
+        margin-top: 3rem;
+    }
+
+    .hero-text h1 {
+        text-align: center;
+        width: 80%;
+        margin: 0;
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0 auto;
+    }
+
+    .hero-text p {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    .get {
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .chrome {
+        margin: 0;
+        margin-top: 2rem;
+    }
+
+    .chrome a {
+        padding: 0;
+        padding: .6rem;
+        font-size: 17px;
+    }
+
+    .fire a {
+        padding: 0;
+        padding: .6rem;
+        font-size: 17px;
+    }
+
+    .aim p {
+        width: 100%;
+    }
+
+    .speed {
+        display: grid;
+    }
+
+    .sh h3 {
+        margin: 0;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .ing h3 {
+        margin: 0;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .sped h3 {
+        margin: 0;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .bookmark {
+        display: grid;
+    }
+
+    .book-img {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .book-img img {
+        width: 80%;
+        margin: 0;
+        margin-left: 4rem;
+    }
+
+    .book-img::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 70%;
+        height: 50%;
+        margin: 0;
+        margin-left: 2rem;
+    }
+
+    .book {
+        margin: 0;
+        margin-top: 4rem;
+    }
+
+    .book h1 {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .book p {
+        text-align: center;
+        width: 100%;
+        font-size: 17px;
+        margin: 0;
+    }
+
+    .more {
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .down p {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .add {
+        display: grid;
+    }
+
+    .mini {
+        width: 100%;
+        margin: 0;
+        margin-top: 2rem;
+        padding:3rem 1rem;
+    }
+
+    .freq p {
+        width: 100%;
+    }
+
+    .booking {
+        width:90%;
+    }
+
+    .join h2 {
+        width: 100%;
+    }
+
+    .type {
+        display: grid;
+    }
+
+    .email input {
+        width: 100%;
+    }
+
+    .us {
+        margin: 0;
+        margin-top: 1rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    .us a {
+        width: 100%;
+        margin-top: 1rem;
+        margin: 0;
+    }
+
+    .twitt {
+        display: grid;
+        margin: 0 auto;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .price {
+        display: grid;
+        margin-left: 0;
+    }
+
+    .clas {
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .icon {
+        margin: 0 ;
+        margin: 0 auto;
+    }
+
+     .fb {
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+}
